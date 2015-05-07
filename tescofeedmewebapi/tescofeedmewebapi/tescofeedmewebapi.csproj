@@ -137,7 +137,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Login\" />
-    <Folder Include="Views\RecipeList\" />
+    <Folder Include="Views\PreferredCuisineRecipeList\" />
+    <Folder Include="Views\SearchByProductRecipeList\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -146,7 +147,8 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
-    <Compile Include="Controllers\RecipeListController.cs" />
+    <Compile Include="Controllers\SearchByProductRecipeListController.cs" />
+    <Compile Include="Controllers\PreferredCuisineRecipeListController.cs" />
     <Compile Include="Models\AllowedUsers.cs" />
     <Compile Include="Models\Ingredient.cs" />
     <Compile Include="Models\Recipe.cs" />

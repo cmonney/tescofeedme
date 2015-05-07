@@ -3,7 +3,7 @@ using tescofeedmewebapi.Models;
 
 namespace tescofeedmewebapi.Controllers
 {
-    public class RecipeListController : ApiController
+    public class PreferredCuisineRecipeListController : ApiController
     {
         [HttpGet]
         public Recipe[] RecipesForUser(string id)
@@ -13,7 +13,7 @@ namespace tescofeedmewebapi.Controllers
                 case AllowedUsers.User1:
                     return AllRecipes.Italian;
                 case AllowedUsers.User2:
-                    return AllRecipes.ModernEuropean;
+                    return AllRecipes.French;
             }
             return AllRecipes.French;
         }

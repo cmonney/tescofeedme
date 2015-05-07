@@ -3,9 +3,9 @@
     public class Ingredient
     {
         public string Name { get; set; }
-        public string Price { get; set; }
+        public double Price { get; set; }
 
-        public Ingredient(string name, string price)
+        public Ingredient(string name, double price)
         {
             Name = name;
             Price = price;
