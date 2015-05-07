@@ -7,9 +7,9 @@ namespace tescofeedmewebapi.Models
         public string FirstName { get; set; } 
         public string LastName { get; set; } 
         public int NumberOfClubcardPoints { get; set; } 
-        public FamilyType FamilyType { get; set; } 
-        public FoodTypePreferences FoodTypePreferences { get; set; }
-        public FoodLocationPreferences FoodLocationPreferences { get; set; }
+        public string FamilyType { get; set; } 
+        public string FoodTypePreferences { get; set; }
+        public string FoodLocationPreferences { get; set; }
         public Recipe[] RecipeList { get; set; } 
     }
 }
