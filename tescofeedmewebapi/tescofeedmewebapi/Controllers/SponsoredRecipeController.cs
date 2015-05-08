@@ -1,11 +1,12 @@
-﻿using System.Web.Mvc;
+﻿using System.Web.Http;
 using tescofeedmewebapi.Models;
 
 namespace tescofeedmewebapi.Controllers
 {
-    public class SponsoredRecipeController : Controller
+    public class SponsoredRecipeController : ApiController
     {
-        public Recipe Index()
+        [HttpGet]
+        public Recipe GetSponsoredRecipe()
         {
             return AllRecipes.SponsoredRecipe;
         }

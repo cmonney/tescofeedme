@@ -110,14 +110,14 @@
                     new Ingredient("1 Little Gem lettuce, torn into pieces ", 0.8),
                     new Ingredient("handful fresh mint leaves", 1.5),
                     new Ingredient("1 lemon, squeezed", 0.3),
-                    new Ingredient("475g (15oz) beef rump steak", 8.46),
+                    new Ingredient("475g (15oz) beef rump steak", 6.46),
                 },
             Instructions =
                 "Preheat the oven to gas 5, 190°C, fan 170°C. In a roasting tray, toss the potatoes with half the oil, the paprika, and a little seasoning. Roast in the oven for 35 minutes, until golden." +
                 "Meanwhile, cook the peas in boiling salted water for 2 minutes. Drain and refresh under cold running water, then toss with the lettuce and mint. Brush the steaks with a little of the remaining oil and set aside. Whisk the rest of the oil with the lemon juice and seasoning, then drizzle over the lettuce and peas." +
                 "Heat a frying pan until hot, add the steak and fry for 4-5 minutes on each side, until cooked through. Transfer to a board for 5 minutes to rest." +
                 "Pour the pan juices over the peas. Slice the steak and serve with the potato wedges and vegetables.",
-            PricePerPerson = 3.09,
+            PricePerPerson = 2.46,
             FeedbackScore = 5
         };
 
