@@ -15,7 +15,7 @@ namespace tescofeedmewebapi.Controllers
                 case AllowedUsers.User2:
                     return AllRecipes.French;
             }
-            return AllRecipes.Italian;
+            return AllRecipes.IndianLowBudget;
         }
     }
 }
