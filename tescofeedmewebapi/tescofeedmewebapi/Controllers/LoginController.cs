@@ -46,7 +46,7 @@ namespace tescofeedmewebapi.Controllers
                     NumberOfClubcardPoints = 753,
                     FamilyType = FamilyType.FamilyOf4.ToString(),
                     FoodTypePreferences = FoodTypePreferences.Finest.ToString(),
-                    FoodLocationPreferences = FoodLocationPreferences.Italian.ToString(),
+                    FoodLocationPreferences = FoodLocationPreferences.Indian.ToString(),
                 };
             }
         }
