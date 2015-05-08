@@ -262,7 +262,7 @@ namespace tescofeedmewebapi.Models
         };
 
         public static readonly Recipe[] IndianLowBudget = {FishCurry, LambBurgers, Omlette, LambCurry};
-        public static readonly Recipe[] RecipesContainBalsamiqVinegar = {LambSteaks, HaddockRecipe, StuffedPeppers};
+        public static readonly Recipe[] RecipesContainBalsamiqVinegar = {LambSteaks, StuffedPeppers};
 
         public static readonly Recipe SponsoredRecipe = SteakAndChips;
 
