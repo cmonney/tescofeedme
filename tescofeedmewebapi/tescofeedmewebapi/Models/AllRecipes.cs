@@ -1,9 +1,12 @@
-﻿namespace tescofeedmewebapi.Models
+﻿using System.Collections.Generic;
+
+namespace tescofeedmewebapi.Models
 {
     internal static class AllRecipes
     {
         private static readonly Recipe HaddockRecipe = new Recipe
         {
+            Id = 1,
             Title = "Haddock with summer vegetables recipe",
             HowLongItTakesInMins = 40,
             HowManyItFeeds = 4,
@@ -36,6 +39,7 @@
 
         private static readonly Recipe LambSteaks = new Recipe
         {
+            Id = 2,
             Title = "Sizzling lamb steaks",
             HowLongItTakesInMins = 15,
             HowManyItFeeds = 4,
@@ -66,6 +70,7 @@
 
         private static readonly Recipe StuffedPeppers = new Recipe
         {
+            Id = 3,
             Title = "Peppers stuffed with cod",
             HowLongItTakesInMins = 35,
             HowManyItFeeds = 4,
@@ -96,6 +101,7 @@
 
         private static readonly Recipe SteakAndChips = new Recipe
         {
+            Id = 4,
             Title = "Steak and chips",
             HowLongItTakesInMins = 45,
             HowManyItFeeds = 4,
@@ -136,6 +142,7 @@
 
         private static readonly Recipe FishCurry = new Recipe
         {
+            Id = 5,
             Title = "Indian fish curry",
             HowLongItTakesInMins = 20,
             HowManyItFeeds = 4,
@@ -165,6 +172,7 @@
 
         private static readonly Recipe LambBurgers = new Recipe
         {
+            Id = 6,
             Title = "Indian lamb burgers",
             HowLongItTakesInMins = 30,
             HowManyItFeeds = 4,
@@ -196,6 +204,7 @@
 
         private static readonly Recipe Omlette = new Recipe
         {
+            Id = 7,
             Title = "Indian masala omelette",
             HowLongItTakesInMins = 15,
             HowManyItFeeds = 4,
@@ -223,6 +232,7 @@
 
         private static readonly Recipe LambCurry = new Recipe
         {
+            Id = 8,
             Title = "Indian lamb curry",
             HowLongItTakesInMins = 25,
             HowManyItFeeds = 4,
@@ -235,19 +245,18 @@
                     new Ingredient("100g baby spinach", 1.5),
                     new Ingredient("2 medium white potatoes, diced", 1.75),
                     new Ingredient("1 onion, finely sliced", 0.16),
-                    new Ingredient("1tbsp ginger, minced", 0.9),
+                    new Ingredient("1 tbsp ginger, minced", 0.9),
                     new Ingredient("3 cloves garlic, minced", 0.9),
                     new Ingredient("750 ml vegetable stock", 0.65),
                     new Ingredient("110g Tesco Thai red curry paste", 1.69),
                     new Ingredient("1 tbsp brown sugar", 1.49),
                     new Ingredient("juice of 1 lime", 0.3),
-                    new Ingredient("1 tbsp fish sauce", 2.39),
                     new Ingredient("pepper", 0.65)
                 },
             Instructions =
                 "Heat the groundnut oil in a large casserole dish over a moderate heat. Saute the diced lamb in batches until golden brown all over. Remove and drain on a plate lined with kitchen paper." +
                 "Add the onion, ginger and garlic to the dish and saute over a reduced heat for 4-5 minutes, stirring occasionally. Add the paste and fry gently for 1-2 minutes, stirring occasionally. Add the lamb and potato back to the dish, then cover with the stock. Bring the mixture to a simmer and cook gently for 25-30 minutes until the potato and lamb are soft." +
-                "Once the lamb and potato are soft, adjust the seasoning with the sugar, lime juice, fish sauce and pepper. Remove from the heat and stir in the spinach until wilted. Allow to stand for a few minutes before serving.",
+                "Once the lamb and potato are soft, adjust the seasoning with the sugar, lime juice and pepper. Remove from the heat and stir in the spinach until wilted. Allow to stand for a few minutes before serving.",
             PricePerPerson = 5.70,
             FeedbackScore = 5
         };
@@ -259,5 +268,16 @@
 
         public static readonly Recipe[] Italian = { LambSteaks, HaddockRecipe, StuffedPeppers };
         public static readonly Recipe[] French = { LambSteaks, HaddockRecipe, StuffedPeppers };
+
+        public static readonly Dictionary<int, Recipe> AllRecipesDictionary = new Dictionary<int, Recipe>();
+
+        static AllRecipes()
+        {
+            var recipes = new[]
+            {FishCurry, LambBurgers, Omlette, LambCurry, LambSteaks, HaddockRecipe, StuffedPeppers, SteakAndChips};
+
+            foreach (var recipe in recipes)
+                AllRecipesDictionary.Add(recipe.Id, recipe);
+        }
     }
 }

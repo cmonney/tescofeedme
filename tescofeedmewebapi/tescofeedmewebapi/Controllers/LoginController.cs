@@ -19,8 +19,8 @@ namespace tescofeedmewebapi.Controllers
                 case AllowedUsers.User1:
                     return new UserDetails
                     {
-                        FirstName = "Steve",
-                        LastName = "Wotton",
+                        FirstName = "Chris",
+                        LastName = "Monney",
                         NumberOfClubcardPoints = 567,
                         FamilyType = FamilyType.FamilyOf4.ToString(),
                         FoodTypePreferences = FoodTypePreferences.Budget.ToString(),

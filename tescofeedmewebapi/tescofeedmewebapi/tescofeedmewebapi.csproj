@@ -138,6 +138,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Views\Login\" />
     <Folder Include="Views\PreferredCuisineRecipeList\" />
+    <Folder Include="Views\Recipe\" />
     <Folder Include="Views\SearchByProductRecipeList\" />
     <Folder Include="Views\SponsoredRecipe\" />
   </ItemGroup>
@@ -148,6 +149,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\RecipeController.cs" />
     <Compile Include="Controllers\SearchByProductRecipeListController.cs" />
     <Compile Include="Controllers\PreferredCuisineRecipeListController.cs" />
     <Compile Include="Controllers\SponsoredRecipeController.cs" />
