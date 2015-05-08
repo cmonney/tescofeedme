@@ -11,11 +11,11 @@ namespace tescofeedmewebapi.Controllers
             switch (id)
             {
                 case AllowedUsers.User1:
-                    return AllRecipes.Italian;
+                    return AllRecipes.IndianLowBudget;
                 case AllowedUsers.User2:
                     return AllRecipes.French;
             }
-            return AllRecipes.French;
+            return AllRecipes.Italian;
         }
     }
 }
