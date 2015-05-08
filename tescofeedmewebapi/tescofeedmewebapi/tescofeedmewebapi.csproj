@@ -139,6 +139,7 @@
     <Folder Include="Views\Login\" />
     <Folder Include="Views\PreferredCuisineRecipeList\" />
     <Folder Include="Views\SearchByProductRecipeList\" />
+    <Folder Include="Views\SponsoredRecipe\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -149,6 +150,7 @@
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\SearchByProductRecipeListController.cs" />
     <Compile Include="Controllers\PreferredCuisineRecipeListController.cs" />
+    <Compile Include="Controllers\SponsoredRecipeController.cs" />
     <Compile Include="Models\AllowedUsers.cs" />
     <Compile Include="Models\Ingredient.cs" />
     <Compile Include="Models\Recipe.cs" />

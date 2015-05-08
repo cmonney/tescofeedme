@@ -9,5 +9,6 @@
         public int HowLongItTakesInMins { get; set; }
         public Ingredient[] Ingredients { get; set; }
         public string Instructions { get; set; }
+        public int FeedbackScore { get; set; }
     }
 }

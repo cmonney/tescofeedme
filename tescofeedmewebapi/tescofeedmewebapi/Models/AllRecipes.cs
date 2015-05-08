@@ -7,7 +7,7 @@
             Title = "Haddock with summer vegetables recipe",
             HowLongItTakesInMins = 40,
             HowManyItFeeds = 4,
-            ImageName = "red_pepper_recipe1.jpg",
+            ImageName = "red_pepper_recipe1",
             Ingredients =
                 new[]
                 {
@@ -30,7 +30,8 @@
                            "Toss the vegetables in olive oil and place in a large roasting tin. Season and drizzle with the balsamic vinegar if using. Roast in the oven for 30-40 minutes until lightly browned and tender. Sprinkle with the chives and set aside." +
                            "Place the haddock fillets on a baking sheet, season and drizzle with a little olive oil. Roast in the oven for 7-10 minutes until just cooked through and flaking easily." +
                            "Serve the haddock with the roasted vegetables, sprinkled with basil leaves and a squeeze of lemon juice.",
-            PricePerPerson = 5.10
+            PricePerPerson = 5.10,
+            FeedbackScore = 5
         };
 
         private static readonly Recipe LambSteaks = new Recipe
@@ -38,7 +39,7 @@
             Title = "Sizzling lamb steaks",
             HowLongItTakesInMins = 15,
             HowManyItFeeds = 4,
-            ImageName = "red_pepper_recipe2.jpg",
+            ImageName = "red_pepper_recipe2",
             Ingredients =
                 new[]
                 {
@@ -58,7 +59,38 @@
                 "Meanwhile, make the salad. Using a peeler, cut the carrots and cucumber into long thin strips. Using a sharp knife, cut the top and bottom off each orange, cut away all the peel and pith, then cut out each segment of orange (hold the fruit over a bowl as you do this to catch the juice; use it in the dressing). " +
                 "Mix the carrots, cucumber, oranges and roasted pepper and olives in a salad bowl and drizzle with the orange juice and balsamic vinegar. " +
                 "Allow the meat to rest for 3-4 minutes, then slice and arrange on top of the salad. Serve immediately.",
-            PricePerPerson = 3.22
+            PricePerPerson = 3.22,
+            FeedbackScore = 5
+        };
+
+
+        private static readonly Recipe StuffedPeppers = new Recipe
+        {
+            Title = "Peppers stuffed with cod",
+            HowLongItTakesInMins = 35,
+            HowManyItFeeds = 4,
+            ImageName = "red_pepper_recipe3",
+            Ingredients =
+                new[]
+                {
+                    new Ingredient("600g cod ", 4.8),
+                    new Ingredient("6 red peppers ", 3.6),
+                    new Ingredient("1 small red chilli pepper (optional)", 1.99),
+                    new Ingredient("3 tomatoes", 0.69),
+                    new Ingredient("1 small bunch of basil", 0.7),
+                    new Ingredient("2 cloves of garlic", 0.3),
+                    new Ingredient("100ml olive oil", 1.0),
+                    new Ingredient("80g grated parmesan", 1.4)
+                },
+            Instructions =
+                "Cut the tops off the peppers, and carefully remove the core and seeds. Reserve the tops and hulls of the peppers." +
+                "Wash the tomatoes and remove the stalks. Plunge them into boiling water for a few minutes until the skin starts to detach. Remove the skins then loosely crush them in a bowl. Wash and chop the chilli finely, and peel and finely chop the garlic. Thin out the leaves from the bunch of basil and loosely chop." +
+                "Heat half the oil in a large casserole dish, then add the peppers (placing them vertically, open top upwards), lower the heat and cook for 10 minutes." +
+                "Cook the cod in boiling water for 5 minutes then drain it and thin out the slices. Heat the remaining oil in a pan and then add the cod, tomatoes and garlic, cook for 5 minutes then turn the heat off and add the basil and chilli pepper and mix well." +
+                "Preheat the oven to 180°C / Gas Mark 6." +
+                "Take the peppers and gently stuff them with the cod, tomato and garlic mixture and place them in an ovenproof dish. Place the lids back onto the peppers, cover them loosely with foil and then place into the oven. Cook for 15 minutes. Remove from the oven, remove the foil, and sprinkle with the grates parmesan and serve.",
+            PricePerPerson = 3.22,
+            FeedbackScore = 4
         };
 
 //        private static Recipe _linguini = new Recipe
@@ -66,7 +98,7 @@
 //            Title = "Lemon and courgette linguine",
 //            HowLongItTakesInMins = 10,
 //            HowManyItFeeds = 2,
-//            ImageName = "img1.jpg",
+//            ImageName = "img1",
 //            Ingredients =
 //                new[] {},
 //            Instructions = "do baking",
@@ -78,7 +110,7 @@
             Title = "Indian fish curry",
             HowLongItTakesInMins = 20,
             HowManyItFeeds = 4,
-            ImageName = "curry_recipe1.jpg",
+            ImageName = "curry_recipe1",
             Ingredients =
                 new[]
                 {
@@ -98,7 +130,8 @@
                 "Season, then add 500g (1lb) cod (or any other firm, white-fleshed fish) cut into big chunks, and simmer gently, covered, for 4-5 minutes, or until just cooked. " +
                 "Meanwhile, fry 4 thinly sliced shallots in 1 tbsp sunflower oil until golden and crispy." +
                 "Scatter over the shallots and coriander leaves. Serve with lime wedges and cooked basmati rice.",
-            PricePerPerson = 3.83
+            PricePerPerson = 3.83,
+            FeedbackScore = 4
         };
 
         private static readonly Recipe LambBurgers = new Recipe
@@ -106,7 +139,7 @@
             Title = "Indian lamb burgers",
             HowLongItTakesInMins = 30,
             HowManyItFeeds = 4,
-            ImageName = "curry_recipe2.jpg",
+            ImageName = "curry_recipe2",
             Ingredients =
                 new Ingredient[]
                 {
@@ -128,7 +161,8 @@
                 "Place the lamb mince in a bowl and add the chilli. Crush the mustard seeds to a powder in a pestle and mortar and add to the lamb with the rest of the spices and seasoning." +
                 "Form the meat into four patties, 2cm thick, brush with oil and leave, covered, in the refrigerator for at least 30 minutes." +
                 "Heat the barbecue until the coals are glowing and there are no flames. Cook the burgers for about four minutes per side or until cooked through. Serve in the buns, topped with yogurt mixed with mint.",
-            PricePerPerson = 2.65
+            PricePerPerson = 2.65,
+            FeedbackScore = 4
         };
 
         private static readonly Recipe Omlette = new Recipe
@@ -136,7 +170,7 @@
             Title = "Indian masala omelette",
             HowLongItTakesInMins = 15,
             HowManyItFeeds = 4,
-            ImageName = "curry_recipe3.jpg",
+            ImageName = "curry_recipe3",
             Ingredients =
                 new[]
                 {
@@ -154,7 +188,8 @@
                 "Heat 1 tbsp of sunflower or vegetable oil in a 20·5cm (8in) nonstick frying pan and add 1 clove crushed garlic, 2 spring onions, 1 medium tomato and 1/2 medium green chilli, chopped. Cook for 2-3 minutes until soft. Add 1 tsp medium curry powder and 1/2 tsp garam masala and fry for a further minute." +
                 "Beat 2 eggs together in a small bowl and season. Add the egg mixture to the pan and swirl the pan until the omelette mixture is cooked underneath." +
                 "Carefully flip the omelette over and cook for 1-2 minutes, until golden. Scatter with 1 tbsp of fresh coriander and serve immediately.",
-            PricePerPerson = 6.27
+            PricePerPerson = 6.27,
+            FeedbackScore = 4
         };
 
         private static readonly Recipe LambCurry = new Recipe
@@ -162,7 +197,7 @@
             Title = "Indian lamb curry",
             HowLongItTakesInMins = 25,
             HowManyItFeeds = 4,
-            ImageName = "curry_recipe4.jpg",
+            ImageName = "curry_recipe4",
             Ingredients =
                 new[]
                 {
@@ -184,13 +219,16 @@
                 "Heat the groundnut oil in a large casserole dish over a moderate heat. Saute the diced lamb in batches until golden brown all over. Remove and drain on a plate lined with kitchen paper." +
                 "Add the onion, ginger and garlic to the dish and saute over a reduced heat for 4-5 minutes, stirring occasionally. Add the paste and fry gently for 1-2 minutes, stirring occasionally. Add the lamb and potato back to the dish, then cover with the stock. Bring the mixture to a simmer and cook gently for 25-30 minutes until the potato and lamb are soft." +
                 "Once the lamb and potato are soft, adjust the seasoning with the sugar, lime juice, fish sauce and pepper. Remove from the heat and stir in the spinach until wilted. Allow to stand for a few minutes before serving.",
-            PricePerPerson = 5.70
+            PricePerPerson = 5.70,
+            FeedbackScore = 5
         };
 
         public static readonly Recipe[] IndianLowBudget = {FishCurry, LambBurgers, Omlette, LambCurry};
-        public static readonly Recipe[] RecipesContainRedPeppers = { LambSteaks, HaddockRecipe };
+        public static readonly Recipe[] RecipesContainRedPeppers = {LambSteaks, HaddockRecipe, StuffedPeppers};
 
-        public static readonly Recipe[] Italian = {HaddockRecipe, LambSteaks};
-        public static readonly Recipe[] French = {HaddockRecipe, LambSteaks};
+        public static readonly Recipe SponsoredRecipe = LambSteaks;
+
+        public static readonly Recipe[] Italian = { LambSteaks, HaddockRecipe, StuffedPeppers };
+        public static readonly Recipe[] French = { LambSteaks, HaddockRecipe, StuffedPeppers };
     }
 }
