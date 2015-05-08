@@ -8,7 +8,7 @@ namespace tescofeedmewebapi.Controllers
         [HttpGet]
         public Recipe[] RecipesThatIncludeProduct(string id)
         {
-            return AllRecipes.RecipesContainRedPeppers;
+            return AllRecipes.RecipesContainBalsamiqVinegar;
         }
     }
 }

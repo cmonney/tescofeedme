@@ -80,18 +80,47 @@
                     new Ingredient("1 small bunch of basil", 0.7),
                     new Ingredient("2 cloves of garlic", 0.3),
                     new Ingredient("100ml olive oil", 1.0),
-                    new Ingredient("80g grated parmesan", 1.4)
+                    new Ingredient("80g grated parmesan", 1.4),
+                    new Ingredient("1 tsp balsamic vinegar", 1.0)
                 },
             Instructions =
                 "Cut the tops off the peppers, and carefully remove the core and seeds. Reserve the tops and hulls of the peppers." +
                 "Wash the tomatoes and remove the stalks. Plunge them into boiling water for a few minutes until the skin starts to detach. Remove the skins then loosely crush them in a bowl. Wash and chop the chilli finely, and peel and finely chop the garlic. Thin out the leaves from the bunch of basil and loosely chop." +
                 "Heat half the oil in a large casserole dish, then add the peppers (placing them vertically, open top upwards), lower the heat and cook for 10 minutes." +
-                "Cook the cod in boiling water for 5 minutes then drain it and thin out the slices. Heat the remaining oil in a pan and then add the cod, tomatoes and garlic, cook for 5 minutes then turn the heat off and add the basil and chilli pepper and mix well." +
+                "Cook the cod in boiling water for 5 minutes then drain it and thin out the slices. Heat the remaining oil in a pan and then add the cod, tomatoes and garlic, cook for 5 minutes then turn the heat off and add the basil, chilli pepper and balsamic vinegar and mix well." +
                 "Preheat the oven to 180°C / Gas Mark 6." +
                 "Take the peppers and gently stuff them with the cod, tomato and garlic mixture and place them in an ovenproof dish. Place the lids back onto the peppers, cover them loosely with foil and then place into the oven. Cook for 15 minutes. Remove from the oven, remove the foil, and sprinkle with the grates parmesan and serve.",
             PricePerPerson = 3.22,
             FeedbackScore = 4
         };
+
+        private static readonly Recipe SteakAndChips = new Recipe
+        {
+            Title = "Steak and chips",
+            HowLongItTakesInMins = 45,
+            HowManyItFeeds = 4,
+            ImageName = "sponsored_recipe1",
+            Ingredients =
+                new[]
+                {
+                    new Ingredient("2 baking potatoes, cut into wedges", 0.6),
+                    new Ingredient("30ml (2 tbsp) olive oil", 1.2),
+                    new Ingredient("1/2 tsp paprika", 0.85),
+                    new Ingredient("250g (8oz) frozen peas", 1.5),
+                    new Ingredient("1 Little Gem lettuce, torn into pieces ", 0.8),
+                    new Ingredient("handful fresh mint leaves", 1.5),
+                    new Ingredient("1 lemon, squeezed", 0.3),
+                    new Ingredient("475g (15oz) beef rump steak", 8.46),
+                },
+            Instructions =
+                "Preheat the oven to gas 5, 190°C, fan 170°C. In a roasting tray, toss the potatoes with half the oil, the paprika, and a little seasoning. Roast in the oven for 35 minutes, until golden." +
+                "Meanwhile, cook the peas in boiling salted water for 2 minutes. Drain and refresh under cold running water, then toss with the lettuce and mint. Brush the steaks with a little of the remaining oil and set aside. Whisk the rest of the oil with the lemon juice and seasoning, then drizzle over the lettuce and peas." +
+                "Heat a frying pan until hot, add the steak and fry for 4-5 minutes on each side, until cooked through. Transfer to a board for 5 minutes to rest." +
+                "Pour the pan juices over the peas. Slice the steak and serve with the potato wedges and vegetables.",
+            PricePerPerson = 3.09,
+            FeedbackScore = 5
+        };
+
 
 //        private static Recipe _linguini = new Recipe
 //        {
@@ -224,9 +253,9 @@
         };
 
         public static readonly Recipe[] IndianLowBudget = {FishCurry, LambBurgers, Omlette, LambCurry};
-        public static readonly Recipe[] RecipesContainRedPeppers = {LambSteaks, HaddockRecipe, StuffedPeppers};
+        public static readonly Recipe[] RecipesContainBalsamiqVinegar = {LambSteaks, HaddockRecipe, StuffedPeppers};
 
-        public static readonly Recipe SponsoredRecipe = LambSteaks;
+        public static readonly Recipe SponsoredRecipe = SteakAndChips;
 
         public static readonly Recipe[] Italian = { LambSteaks, HaddockRecipe, StuffedPeppers };
         public static readonly Recipe[] French = { LambSteaks, HaddockRecipe, StuffedPeppers };
